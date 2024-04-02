@@ -55,3 +55,22 @@ def call_playlist(creator, playlist_id):
         playlist_df = pd.concat([playlist_df, track_df], ignore_index = True)
     return playlist_df
 
+
+###  input playlist to print df (user/spotify,playlist UID)  
+
+# df = (call_playlist("Tymon Dalton","6ZJGYT2AYXr683qI2OxoSY"))
+# print(df.to_string())
+# dfVal = df['valence'].describe()
+# print(dfVal)
+
+# ###df.to_csv('out.csv') good if no unicode
+# df.to_csv('file.csv',encoding='utf-8-sig') #file.csv rename
+
+df1 = (call_playlist("Tymon Dalton","7mmbCvQT3zrgXsq4BLwIwj"))
+print(df1.to_string())
+# dfVal = df1['valence'].describe()
+# print(dfVal)
+
+
+
+# df1.to_csv('bigdata.csv',encoding='utf-8-sig') #file.csv rename
