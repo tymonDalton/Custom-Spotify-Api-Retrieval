@@ -5,7 +5,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 
-#spotify authorization that you must input personal api for token pulls
+#spotify authorization that you must input personal api id for token pulls
 cid = '**input**'
 secret = '**input**'
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
